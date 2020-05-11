@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Unblu visitor-js-api Example</title>
+  <!-- <script type="text/javascript" defer="defer" src="https://unblu.cloud/unblu/visitor.js?x-unblu-apikey=WMM3hhDISfKT762iItkdAw"></script> -->
+
+  <!-- <script type="text/javascript" defer="defer" src="https://aspectra-stage.unblu-test.com/unblu/visitor.js?x-unblu-apikey=v_bOOupBQLmFbV8AKLXqJA"></script> -->
+
+ <!-- <script type="text/javascript" defer="defer" src="http://localhost:8080/unblu/visitor.js?x-unblu-apikey=MZsy5sFESYqU7MawXZgR_w"></script> -->
+
+<script type="text/javascript" defer="defer" src="https://unblu.cloud/unblu/visitor.js?x-unblu-apikey=6PQv2RPPQd23-byJo1ILJw"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+  <!-- <script src="https://unblu.cloud/unblu/js-api/v2/visitor/visitor-api.min.js"></script> -->
+
+  <!-- <script type="text/javascript" src="unbluCobrowsing.js"></script> -->
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron" x-unblu-skip-element="true">
+      <h1>Welcome the Unblu visitor-js-api Example</h1>
+    </div>
+
+    <h3>You can open Unblu UI using the Unblu visitor-js-api</h3>
+    <span>Unblu Visitor UI: </span><a href="#" title="Live Support" onclick="openVisitorUI()" class="btn btn-primary">Load Unblu UI</a>
+
+    <h3>You can start a livechat conversation using the Unblu visitor-js-api</h3>
+    <span>Livechat: </span><a href="#" title="Live Support" onclick="startNewChat()" class="btn btn-primary">Live Support</a>
+
+    <h3>You can join a cobrowsing conversation using the Unblu visitor-js-api</h3>
+    <div class="form-group">
+      <label for="usr">Enter PIN:</label>
+      <input type="text" class="form-control" unbluCapturingHint="block" id="pin">
+    </div>
+
+    <button type="button" class="btn btn-info" onclick="startPinConversation()">Join</button>
+
+    <h3>You can load Unblu default snippet</h3>
+    <span>Unblu Snippet: </span><a href="#" title="Live Support" onclick="loadUnblu()" class="btn btn-primary">Load Unblu snippet</a>
+  </div>
+
+</body>
+</html>
