@@ -86,7 +86,7 @@ openVisitorUI = () => {
       // use the api
       console.log("API initialized successfully!");
 
-      api.ui.openIndividualUi().then(() => {
+      api.ui.openPinEntryUi().then(() => {
 
       }).catch();
 
@@ -103,7 +103,7 @@ openVisitorUI = () => {
     });
   } else if (unblu.api.isInitialized()) {
     var api = unblu.api.initializedApi;
-    api.ui.openIndividualUi().then(() => {
+    api.ui.openPinEntryUi().then(() => {
 
     }).catch();
   } else {
@@ -111,7 +111,7 @@ openVisitorUI = () => {
       // use the api
       console.log("API initialized successfully!");
 
-      api.ui.openIndividualUi().then(() => {
+      api.ui.openPinEntryUi().then(() => {
 
       }).catch();
     }).catch(e => {
